@@ -1,11 +1,10 @@
-import React from 'react';
 import { RouterProvider } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './i18n';
 
-import { router } from './router';
+import { Router } from './router/Router';
 
 const theme = createTheme({
   palette: {
@@ -30,7 +29,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <RouterProvider router={router} />
+      <RouterProvider router={Router} />
       <ToastContainer position="top-right" autoClose={5000} />
     </ThemeProvider>
   );

@@ -1,19 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
 import LandingPage from '../pages/LandingPage';
+import { ROUTES } from '../constants/Routes';
 
-export const ROUTES = {
-  HOME: '/',
-  CREATE: '/create',
-  TEMPLATES: '/templates',
-  LOGIN: '/login',
-  REGISTER: '/register',
-} as const;
-
-export type RouteKeys = keyof typeof ROUTES;
-export type RouteValues = typeof ROUTES[RouteKeys];
-
-export const router = createBrowserRouter([
+export const Router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,

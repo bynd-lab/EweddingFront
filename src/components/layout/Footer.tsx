@@ -1,8 +1,6 @@
 import React from 'react';
-import { Box, Container, Grid, Typography, Link } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
+import { Box, Container, Grid, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { ROUTES } from '../../router';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -22,7 +20,7 @@ const Footer: React.FC = () => {
     >
       <Container maxWidth="lg">
         <Grid container spacing={4}>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6} sx={{ textAlign: 'center' }}>
             <Typography variant="h6" color="text.primary" gutterBottom>
               {t('footer-about')}
             </Typography>
@@ -30,27 +28,11 @@ const Footer: React.FC = () => {
               {t('footer-about-description')}
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Typography variant="h6" color="text.primary" gutterBottom>
-              {t('footer-quick-links')}
-            </Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-              <Link component={RouterLink} to={ROUTES.HOME} color="inherit">
-                {t('nav-home')}
-              </Link>
-              <Link component={RouterLink} to={ROUTES.CREATE} color="inherit">
-                {t('nav-create')}
-              </Link>
-              <Link component={RouterLink} to={ROUTES.TEMPLATES} color="inherit">
-                {t('nav-templates')}
-              </Link>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6} sx={{ textAlign: 'center' }}>
             <Typography variant="h6" color="text.primary" gutterBottom>
               {t('footer-contact')}
             </Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, alignItems: 'center' }}>
               <Typography variant="body2" color="text.secondary">
                 {t('footer-contact-email')}
               </Typography>

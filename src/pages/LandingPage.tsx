@@ -1,11 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import { Typography, Button, Grid, Box, Container } from '@mui/material';
 import { Brush, Speed, Share } from '@mui/icons-material';
 import '../styles/landing.scss';
+import { ROUTES } from '../constants/Routes';
 
 const LandingPage: React.FC = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const features = [
     {
@@ -39,7 +42,9 @@ const LandingPage: React.FC = () => {
             <Button
               variant="contained"
               size="large"
+              style={{ marginTop: '20px' }}
               className="landing-page__cta-button"
+              onClick={() => navigate(ROUTES.CREATE)}
             >
               {t('create-invitation')}
             </Button>
