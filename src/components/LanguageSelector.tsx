@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Menu, MenuItem, IconButton, Typography, Box } from '@mui/material';
-import { Language as LanguageIcon } from '@mui/icons-material';
 import CountryFlag from './CountryFlag';
 
 const languages = [
@@ -36,7 +35,6 @@ const LanguageSelector: React.FC = () => {
         color="inherit"
         sx={{ display: 'flex', alignItems: 'center', gap: 1 }}
       >
-        <LanguageIcon />
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
           <CountryFlag countryCode={currentLanguage.flag} />
           <Typography variant="body2">{currentLanguage.name}</Typography>
