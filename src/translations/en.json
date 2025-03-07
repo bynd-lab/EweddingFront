@@ -1,0 +1,16 @@
+{
+  "welcome": "Welcome",
+  "create-invitation": "Create Invitation",
+  "language": "Language",
+  "hero-title": "Create Your Invitations Online",
+  "hero-subtitle": "Create beautiful invitations and share with friends",
+  "feature-custom-design": "Custom Design",
+  "feature-custom-design-description": "Create unique designs for each invitation",
+  "feature-easy-to-use": "Easy to Use",
+  "feature-easy-to-use-description": "Create invitations with a simple and intuitive interface",
+  "feature-share-online": "Share Online",
+  "feature-share-online-description": "Share invitations online and manage your guests",
+  "login": "Login",
+  "register": "Register",
+  "logout": "Logout"
+} 

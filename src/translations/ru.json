@@ -1,0 +1,16 @@
+{
+  "welcome": "Добро пожаловать",
+  "create-invitation": "Создать приглашение",
+  "language": "Язык",
+  "hero-title": "Создавайте приглашения онлайн",
+  "hero-subtitle": "Создавайте красивые приглашения и делитесь с друзьями",
+  "feature-custom-design": "Пользовательский дизайн",
+  "feature-custom-design-description": "Создавайте уникальный дизайн для каждого приглашения",
+  "feature-easy-to-use": "Простота использования",
+  "feature-easy-to-use-description": "Создавайте приглашения с помощью простого и интуитивного интерфейса",
+  "feature-share-online": "Онлайн-поделиться",
+  "feature-share-online-description": "Делитесь приглашениями онлайн и управляйте гостями",
+  "login": "Войти",
+  "register": "Регистрация",
+  "logout": "Выйти"
+} 
